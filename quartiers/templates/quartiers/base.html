@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Découverte Dakar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>body{font-family:'Poppins', sans-serif}</style>
+</head>
+<body class="bg-[#FFF8F0] text-gray-800 flex flex-col min-h-screen">
+
+<nav class="bg-[#1A1A1A] text-white p-4 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <a href="/" class="text-2xl font-bold text-[#FFB700]">DAKAR<span class="text-white">.SN</span></a>
+        <div class="space-x-6 hidden md:flex">
+            <a href="/" class="hover:text-[#FFB700]">Accueil</a>
+            <a href="/a-propos/" class="hover:text-[#FFB700]">À propos</a>
+            <a href="/lieux/" class="hover:text-[#FFB700]">Lieux</a>
+            <a href="/histoires/" class="hover:text-[#FFB700]">Histoires</a>
+            <a href="/loisirs/" class="hover:text-[#FFB700]">Loisirs</a>
+        </div>
+    </div>
+</nav>
+
+<main class="flex-grow">
+    {% block content %}{% endblock %}
+</main>
+
+<footer class="bg-[#1A1A1A] text-gray-300 mt-20">
+    <div class="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-8">
+        <div>
+            <h3 class="text-[#FFB700] font-bold text-xl mb-3">Découverte Dakar</h3>
+            <p class="text-sm">Projet étudiant pour faire découvrir la vraie histoire de Dakar, de ses villages Lébous à ses quartiers populaires Médina, Fass, Colobane.</p>
+        </div>
+        <div>
+            <h4 class="font-bold mb-3">Quartiers</h4>
+            <p class="text-sm">Médina (1914) • Fass • Colobane • Gueule Tapée • Yoff • Ngor</p>
+        </div>
+        <div>
+            <h4 class="font-bold mb-3">Contact</h4>
+            <p class="text-sm">Bargny Gouddou, Dakar<br>Fait avec ❤️ pour Dakar</p>
+        </div>
+    </div>
+    <div class="bg-black text-center py-3 text-xs">© 2026 Découverte Dakar - Tous droits réservés</div>
+</footer>
+
+</body>
+</html>

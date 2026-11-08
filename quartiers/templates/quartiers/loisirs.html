@@ -1,0 +1,88 @@
+{% extends 'quartiers/base.html' %}
+{% load static %}
+{% block content %}
+<div class="max-w-6xl mx-auto px-6 py-12">
+  <span class="bg-[#FFB700] text-black px-4 py-1 rounded-full text-xs font-bold tracking-widest">MÉDINA - FASS - COLOBANE - YOFF</span>
+  <h1 class="text-5xl font-black mt-4">Loisirs entre voisins</h1>
+  <p class="text-gray-500 mt-2">Ce qu'on fait à Dakar quand on ne travaille pas.</p>
+
+  <!-- GRILLE PRINCIPALE -->
+  <div class="mt-10 grid md:grid-cols-3 gap-6">
+
+       <!-- 1. NAVETANE JARRAAF -->
+    <div class="bg-white rounded-3xl overflow-hidden shadow-sm border">
+      <img src="{% static 'images/jaraaf.jpeg' %}" class="w-full h-52 object-cover">
+      <div class="p-6">
+        <span class="text-xs font-bold text-[#FFB700] tracking-widest">YOFF - TERRAIN JARRAAF</span>
+        <h3 class="text-xl font-bold mt-1">Navétane - Fass vs Yoff</h3>
+        <p class="text-sm text-gray-600 mt-3">Le Jarraaf, c'est le temple. Sable, foule, drapeaux. Fass Gueule Tapée contre Yoff. Quand Yoff marque, tout le village entre sur le terrain. Ambiance jamais vue ailleurs.</p>
+        <div class="mt-4 flex gap-2 text-xs">
+          <span class="bg-black text-white px-3 py-1 rounded-full">Août - Octobre</span>
+          <span class="bg-gray-100 px-3 py-1 rounded-full">Terrain Jarraaf</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. LUTTE -->
+    <div class="bg-white rounded-3xl overflow-hidden shadow-sm border">
+      <img src="{% static 'images/lutte-fass.jpeg' %}" class="w-full h-52 object-cover">
+      <div class="p-6">
+        <span class="text-xs font-bold text-[#FFB700] tracking-widest">FASS DELO</span>
+        <h3 class="text-xl font-bold mt-1">Lutte - Écurie Fass</h3>
+        <p class="text-sm text-gray-600 mt-3">5h du matin, plage de Yoff. Les lutteurs s'entraînent dans le sable. Huile de palme, sable, muscles. Tyson, Yekini sont passés par là. Tu peux regarder, gratuit.</p>
+        <div class="mt-4 flex gap-2 text-xs">
+          <span class="bg-black text-white px-3 py-1 rounded-full">Tous les jours</span>
+          <span class="bg-gray-100 px-3 py-1 rounded-full">5h - 7h</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. PECHE YOFF -->
+    <div class="bg-white rounded-3xl overflow-hidden shadow-sm border">
+      <img src="{% static 'images/pirogue.jpeg' %}" class="w-full h-52 object-cover">
+      <div class="p-6">
+        <span class="text-xs font-bold text-[#FFB700] tracking-widest">YOFF - 5H DU MATIN</span>
+        <h3 class="text-xl font-bold mt-1">Retour des pirogues</h3>
+        <p class="text-sm text-gray-600 mt-3">Le meilleur spectacle de Dakar. 200 pirogues qui rentrent, femmes qui vendent le poisson, cris, odeur de mer. Si tu te lèves pas tôt, tu rates Dakar.</p>
+        <div class="mt-4 flex gap-2 text-xs">
+          <span class="bg-black text-white px-3 py-1 rounded-full">Tous les jours</span>
+          <span class="bg-gray-100 px-3 py-1 rounded-full">5h - 8h</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="mt-8 grid md:grid-cols-5 gap-6">
+    <div class="md:col-span-2 bg-white rounded-3xl overflow-hidden shadow-sm border flex flex-col md:flex-row">
+      <img src="{% static 'images/village.jpeg' %}" class="md:w-1/2 h-64 object-cover">
+      <div class="p-6 md:w-1/2">
+        <h3 class="text-xl font-bold">Village Artisanal</h3>
+        <p class="text-sm text-gray-600 mt-2">Soumbédioune. Tu regardes le sculpteur tailler un masque pendant 2h. Tu bois un attaya. Tu achètes rien si tu veux. C'est une balade, pas un magasin.</p>
+        <p class="text-xs font-bold mt-4">10h - 19h - Gratuit</p>
+      </div>
+    </div>
+
+    <div class="md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-black text-white rounded-3xl p-7">
+        <h3 class="font-bold text-[#FFB700]">Sabar à la Médina</h3>
+        <p class="text-sm mt-3 opacity-80">Samedi soir, rue 6. Tambours sabar, femmes qui dansent. Tu ne sais pas danser ? On t'apprend. Pas de touristes, que des voisins.</p>
+        <p class="text-xs mt-4 opacity-50">Samedi 22h - Rue 6 Médina</p>
+      </div>
+      <div class="bg-[#FFB700] rounded-3xl p-7">
+        <h3 class="font-bold">Ataya & Discussion</h3>
+        <p class="text-sm mt-3">Le vrai loisir dakarois : 3 thés, de 11h à 16h sous un manguier à Fass. On parle de lutte, de politique, de religion. Le temps s'arrête.</p>
+        <p class="text-xs mt-4 font-bold">Partout - Toute la journée</p>
+      </div>
+      <div class="md:col-span-2 bg-white rounded-3xl p-7 border flex items-center justify-between">
+        <div>
+          <h3 class="font-bold">Corniche & Mosquée de la Divinité</h3>
+          <p class="text-sm text-gray-600">Fin de journée, tu marches. Les familles, les lutteurs, les amoureux. Coucher de soleil sur la mosquée.</p>
+        </div>
+        <img src="{% static 'images/corniche.jpeg' %}" class="w-20 h-20 rounded-2xl object-cover ml-4">
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

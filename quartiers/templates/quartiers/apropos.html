@@ -1,0 +1,61 @@
+{% extends 'quartiers/base.html' %}
+{% load static %}
+{% block content %}
+<div class="max-w-6xl mx-auto px-6 py-12">
+  <div class="grid md:grid-cols-5 gap-10">
+    <!-- Colonne texte -->
+    <div class="md:col-span-3">
+      <span class="bg-[#FFB700] text-black px-4 py-1 rounded-full text-xs font-bold tracking-widest">PROJET ÉTUDIANT - 2025</span>
+      <h1 class="text-5xl font-black mt-4 leading-[0.9]">À propos de<br>ce site</h1>
+      
+      <div class="mt-8 space-y-6 text-gray-700 leading-relaxed">
+        <p class="text-lg font-medium text-black">Ce site est né à la Médina. Pas sur internet.</p>
+        <p>J'habite entre Fass, Colobane et Yoff. Tous les jours je traverse Tilène, je vois les pirogues de Yoff partir à 5h, les lutteurs de Fass courir sur la plage, les vendeurs de Colobane crier "fripe first".</p>
+        <p>Mais quand je cherche Dakar sur Google, je vois des images de Dubaï, des plages de Bali. Rien de vrai.</p>
+        <p>Alors j'ai décidé de faire <b>Dakar Sunu Gox</b> : Médina, Fass, Colobane, Yoff. 4 quartiers qui font Dakar. 100% photos réelles, 100% histoires de nos grands.</p>
+        
+        <div class="grid grid-cols-3 gap-4 pt-6">
+          <div class="bg-white p-4 rounded-2xl shadow-sm border text-center">
+            <div class="text-2xl font-black">4</div>
+            <div class="text-xs text-gray-500">Quartiers</div>
+          </div>
+          <div class="bg-white p-4 rounded-2xl shadow-sm border text-center">
+            <div class="text-2xl font-black">8</div>
+            <div class="text-xs text-gray-500">Lieux vrais</div>
+          </div>
+          <div class="bg-white p-4 rounded-2xl shadow-sm border text-center">
+            <div class="text-2xl font-black">0</div>
+            <div class="text-xs text-gray-500">Image fausse</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Colonne image / timeline -->
+    <div class="md:col-span-2 space-y-6">
+      <div class="rounded-3xl overflow-hidden shadow-xl">
+        <img src="{% static 'images/village.jpeg' %}" class="w-full h-64 object-cover">
+<div class="bg-black text-white p-4">
+  <p class="text-sm font-bold">Village Artisanal de Soumbédioune</p>
+  <p class="text-xs opacity-80 mt-1">Le lieu où Dakar se sculpte à la main. Depuis 1960, les artisans Lébous taillent masques et statues. C'est entre Médina et Corniche, c'est le cœur artisanal de la ville.</p>
+</div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 shadow-sm border">
+        <h3 class="font-bold mb-4">Pourquoi ces 4 quartiers ?</h3>
+        <ul class="space-y-3 text-sm">
+          <li class="flex gap-3"><span class="bg-[#FFF8F0] border w-8 h-8 rounded-full flex items-center justify-center font-bold">M</span><span><b>Médina</b> - 1914, créée pour les Lébous</span></li>
+          <li class="flex gap-3"><span class="bg-[#FFF8F0] border w-8 h-8 rounded-full flex items-center justify-center font-bold">F</span><span><b>Fass</b> - Écurie de lutte mythique</span></li>
+          <li class="flex gap-3"><span class="bg-[#FFF8F0] border w-8 h-8 rounded-full flex items-center justify-center font-bold">C</span><span><b>Colobane</b> - Le plus grand marché</span></li>
+          <li class="flex gap-3"><span class="bg-[#FFF8F0] border w-8 h-8 rounded-full flex items-center justify-center font-bold">Y</span><span><b>Yoff</b> - Village de pêcheurs Lébou</span></li>
+        </ul>
+      </div>
+
+      <div class="bg-[#FFB700] rounded-3xl p-6">
+        <p class="font-bold">Un projet par un Dakarois, pour les Dakarois.</p>
+        <p class="text-sm mt-2">Contact : dakar.sunu.gox@gmail.com</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

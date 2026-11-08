@@ -1,0 +1,77 @@
+{% extends 'quartiers/base.html' %}
+{% load static %}
+{% block content %}
+<div class="max-w-6xl mx-auto px-6 py-12">
+  <span class="bg-black text-[#FFB700] px-4 py-1 rounded-full text-xs font-bold tracking-widest">MÉDINA - FASS - COLOBANE - YOFF</span>
+  <h1 class="text-5xl font-black mt-4">Nos Histoires</h1>
+  <p class="text-gray-500 mt-2">4 quartiers qui ont fait Dakar. De 1914 à aujourd'hui.</p>
+
+  <!-- HISTOIRES DES QUARTIERS - ON GARDE TOUT -->
+  <div class="mt-12 grid md:grid-cols-2 gap-6">
+    <div class="bg-white rounded-3xl p-8 shadow-sm border">
+      <h2 class="text-2xl font-bold">1914 - La Médina</h2>
+      <span class="text-xs bg-[#FFF8F0] border px-3 py-1 rounded-full">Création coloniale</span>
+      <p class="mt-4 text-sm text-gray-700 leading-relaxed">Créée par les colons pour déplacer les Lébous hors du Plateau. Ils voulaient isoler. Ils ont créé le quartier le plus vivant de Dakar. Tilène, Rue 6, les maisons basses... C'est là que Dakar a gardé son âme.</p>
+      <img src="{% static 'images/medina.jpeg' %}" class="mt-6 w-full h-40 object-cover rounded-2xl">
+    </div>
+
+    <div class="bg-white rounded-3xl p-8 shadow-sm border">
+      <h2 class="text-2xl font-bold">Fass - Le quartier de la lutte</h2>
+      <span class="text-xs bg-[#FFF8F0] border px-3 py-1 rounded-full">Écurie mythique</span>
+      <p class="mt-4 text-sm text-gray-700 leading-relaxed">Fass Delo, Fass Gueule Tapée. Ici on ne naît pas lutteur, on le devient. Tous les matins, les jeunes courent sur la plage de Yoff. L'écurie Fass a donné les plus grands champions : Tyson, Yekini. C'est la fierté du quartier.</p>
+      <img src="{% static 'images/lutte-fass.jpeg' %}" class="mt-6 w-full h-40 object-cover rounded-2xl">
+    </div>
+
+    <div class="bg-white rounded-3xl p-8 shadow-sm border">
+      <h2 class="text-2xl font-bold">Colobane - Le grand marché</h2>
+      <span class="text-xs bg-[#FFF8F0] border px-3 py-1 rounded-full">Commerce</span>
+      <p class="mt-4 text-sm text-gray-700 leading-relaxed">Si tu n'as pas trouvé à Colobane, tu ne trouveras nulle part. Fripe first, pièces auto, tissus wax. C'est le poumon économique. Les femmes de Médina y font leurs courses depuis 1960. Tout Dakar passe par Colobane.</p>
+      <img src="{% static 'images/corniche.jpeg' %}" class="mt-6 w-full h-40 object-cover rounded-2xl">
+    </div>
+
+    <div class="bg-white rounded-3xl p-8 shadow-sm border">
+      <h2 class="text-2xl font-bold">Yoff - Village de pêcheurs</h2>
+      <span class="text-xs bg-[#FFF8F0] border px-3 py-1 rounded-full">Village Lébou</span>
+      <p class="mt-4 text-sm text-gray-700 leading-relaxed">Yoff n'a jamais été un quartier, c'est un village. Un village Lébou qui a refusé de devenir une ville. Les pirogues colorées, le mausolée Layène face à la mer, les pêcheurs qui partent à 5h du matin. C'est le Dakar d'avant.</p>
+      <img src="{% static 'images/yoff.jpeg' %}" class="mt-6 w-full h-40 object-cover rounded-2xl">
+    </div>
+  </div>
+
+
+  <div class="mt-16">
+    <h2 class="text-4xl font-black">Nos Religions - Le vivre ensemble</h2>
+    <p class="text-gray-500 mt-2">À Dakar on prie différemment, mais on vit ensemble.</p>
+
+    <div class="mt-8 grid lg:grid-cols-3 gap-6">
+      <div class="bg-[#FFF8F0] rounded-3xl p-7 border border-[#FFB700]/30">
+        <h3 class="text-lg font-black">1. L'Islam - Les Engagés du Vendredi</h3>
+        <p class="text-xs text-gray-500 mt-1">95% de Dakar</p>
+        <div class="mt-4 space-y-3 text-sm leading-relaxed">
+          <p><b>Vendredi 13h30 - Al Juma :</b> Tout s'arrête. De Massalikoul Jinaane (Fass) à la Mosquée de la Divinité, les hommes en boubou blanc, tapis sous le bras. Les engagés, ceux qui ne ratent jamais la prière.</p>
+          <p><b>Tidiane, Mouride, Layène :</b> Tidiane à Fass (chants du jeudi), Mouride à Colobane (commerçants), Layène à Yoff (mausolée face à la mer).</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-7 border shadow-sm">
+        <h3 class="text-lg font-black">2. Christianisme - Les Frères de Yoff</h3>
+        <p class="text-xs text-gray-500 mt-1">5% mais partout</p>
+        <div class="mt-4 space-y-3 text-sm leading-relaxed">
+          <p><b>Dimanche :</b> Cathédrale du Souvenir Africain, Plateau. Messe en wolof. À Yoff et Médina, même famille : grand frère musulman, petite sœur catholique. Tabaski et Noël à la même table.</p>
+          <p><b>Le respect :</b> Le voisin chrétien garde la boutique du musulman le vendredi, et l'inverse le dimanche.</p>
+        </div>
+      </div>
+
+      <div class="bg-black text-white rounded-3xl p-7">
+        <h3 class="text-lg font-black text-[#FFB700]">3. Traditions Lébous - Rab & Ndeup</h3>
+        <p class="text-xs text-white/60 mt-1">Avant l'Islam et l'Église</p>
+        <div class="mt-4 space-y-3 text-sm leading-relaxed text-white/90">
+          <p><b>Les Rab :</b> Esprits protecteurs de la mer et de la terre. À Yoff, on ne coupe pas certains baobabs.</p>
+          <p><b>Le Ndeup :</b> Cérémonie de guérison Lébou. Tambours, femmes en blanc. Encore pratiqué à Yoff, Fass, Médina.</p>
+          <p><b>Le Penc :</b> L'arbre à palabre. C'est là que le quartier décide. La vraie religion de Dakar : le vivre ensemble.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

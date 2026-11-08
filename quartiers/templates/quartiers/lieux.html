@@ -1,0 +1,29 @@
+{% extends 'quartiers/base.html' %}
+{% load static %}
+{% block content %}
+<div class="bg-[#FFF8F0] py-12 px-6">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-end gap-4">
+    <div>
+      <span class="bg-black text-[#FFB700] px-4 py-1 rounded-full text-xs font-bold tracking-widest">MÉDINA - FASS - COLOBANE - YOFF</span>
+      <h1 class="text-5xl font-black mt-4">Dakar en 8 lieux vrais</h1>
+      <p class="text-gray-500 mt-2">Tout est à Dakar, rien de faux. 100% photos locales.</p>
+    </div>
+    <a href="/" class="text-sm font-bold border-b-2 border-black pb-1">← Retour accueil</a>
+  </div>
+</div>
+
+<div class="max-w-7xl mx-auto px-6 py-8 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+  {% for lieu in lieux %}
+  <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition overflow-hidden group">
+    <div class="overflow-hidden">
+      <img src="{% static lieu.img %}" class="h-48 w-full object-cover group-hover:scale-110 transition duration-500">
+    </div>
+    <div class="p-6">
+      <span class="text-[10px] font-bold bg-[#FFF8F0] border px-3 py-1 rounded-full tracking-widest">{{ lieu.cat }}</span>
+      <h3 class="font-bold text-lg mt-3">{{ lieu.nom }}</h3>
+      <p class="text-sm text-gray-600 mt-2 leading-relaxed">{{ lieu.desc }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
